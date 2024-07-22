@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.0"
+        // Diğer bağımlılıklarınızı buraya ekleyin
+    }
+}
+
+plugins {
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.jetbrains.kotlin.android) apply false
+}
+
+allprojects {
+    repositories {
+        // Bu kısmı kaldırın veya yorum satırı haline getirin
+        // google()
+        // mavenCentral()
+    }
+}
